@@ -26,6 +26,17 @@
 			toolbar: "undo redo | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | forecolor backcolor table code"
 		});
 	</script>
+
+
+	<!--<style>
+		.disabledInput{
+			pointer-events: none;
+			touch-action: none;
+			opacity: 0.8;
+			background: #d5d1d1;
+		}
+	</style>-->
+
 </head>
 
 <body>
@@ -70,7 +81,7 @@
 
                         <div class="form-group">
 							<label for="InputNombre"> No.Repeticiones</label>
-							<input  type="number" class="form-control" id="repeticiones" th:field="*{repeticiones}" placeholder="0" style="width: 100px;">
+							<input  type="number" class="form-control disabledInput" id="repeticiones"  th:field="*{repeticiones}" placeholder="0" style="width: 100px;" disabled >
 						</div>
 						
 
